@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="S60MyMoney2FeideeMoney" default="jar" basedir=".">
+    <property name="version" value="1.0"/>
+    <property name="src.dir" value="${basedir}/src"/>
+    <property name="build.dir" value="${basedir}/build"/>
+    <property name="target.dir" value="${basedir}/target"/>
+    <property name="lib.dir" value="${basedir}/libs"/>
+    <property name="jar.file" value="${ant.project.name}-${version}.jar"/>
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}" quiet="true"/>
+        <delete dir="${target.dir}" quiet="true"/>
+    </target>
+
+    <target name="init" depends="clean">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${target.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}">
+            <include name="**/*.java"/>
+            <classpath refid="classpath"/>
+        </javac>
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar destfile="${target.dir}/${jar.file}">
+            <!-- 将依赖的第3方jar解包成class一并打包为一个jar文件 -->
+            <zipgroupfileset dir="./libs" />
+            <fileset dir="${build.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-class"
+                    value="com.ufologist.mymoney.migrate.MyMoneyMigrateTool" />
+            </manifest>
+        </jar>
+    </target>
+</project>
