@@ -1,4 +1,4 @@
-# s60-mymoney-2-feidee-money
+# ![launchIcon](https://rawgit.com/ufologist/s60-mymoney-2-feidee-money/master/S60MyMoney2FeideeMoney/experience_images/launchIcon.png) s60-mymoney-2-feidee-money
 v1.0.0 2012-12-30
 
 Automatically exported from code.google.com/p/s60-mymoney-2-feidee-money
