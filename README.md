@@ -3,6 +3,8 @@ v1.0.0 2012-12-30
 
 Automatically exported from code.google.com/p/s60-mymoney-2-feidee-money
 
+![google-code](https://rawgit.com/ufologist/s60-mymoney-2-feidee-money/master/google-code.png)
+
 [将S60我的财务中的数据导入随手记](http://www.douban.com/note/255604807/)
 
 # 为什么做这个?
