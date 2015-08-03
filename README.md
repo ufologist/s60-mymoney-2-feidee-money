@@ -53,7 +53,7 @@ Automatically exported from code.google.com/p/s60-mymoney-2-feidee-money
 
 4. 编写工具来转换数据(我讨厌复制/粘帖)
    
-   于是就有了 S60MyMoney2FeideeMoney-1.0.jar
+   于是就有了 [S60MyMoney2FeideeMoney-1.0.jar](https://github.com/ufologist/s60-mymoney-2-feidee-money/releases/download/v1.0.0/S60MyMoney2FeideeMoney-1.0.jar)
 
 
 ## 我的财务导入随手记实战攻略
@@ -68,13 +68,15 @@ Automatically exported from code.google.com/p/s60-mymoney-2-feidee-money
 2. 准备好从我的财务导出的csv文件
    
    例如导出文件名为`我的财务.csv`
-3. 下载将我的财务数据转成随手记的工具S60MyMoney2FeideeMoney-1.0.jar
+3. 下载将我的财务数据转成随手记的工具
+   
+   [S60MyMoney2FeideeMoney-1.0.jar](https://github.com/ufologist/s60-mymoney-2-feidee-money/releases/download/v1.0.0/S60MyMoney2FeideeMoney-1.0.jar)
    
    因为转数据的工具是使用java编写的, 因此请自备最新版的JDK(起码1.5以上), 如何安装请自行[求助搜索引擎](https://www.baidu.com/s?wd=%E5%AE%89%E8%A3%85%20jdk)
 4. 随手记网站帐号一枚
 
 ### 先在电脑上转换数据并导入数据
-1. 通过S60MyMoney2FeideeMoney-1.0.jar将`我的财务.csv`文件转成`随手记csv`数据格式
+1. 通过`S60MyMoney2FeideeMoney-1.0.jar`将`我的财务.csv`文件转成随手记csv数据格式
    
    使用该工具最便捷的方式就是将`我的财务.csv`和工具放在同一目录下, 直接双击运行
    
